@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,84 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.Header_container {
+  background-image: linear-gradient(to bottom, #141414, #222222, #141414);
+}
+
+.nav {
+  display: flex;
+}
+.main h3 {
+  color: rgb(230, 83, 60);
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.nav_item {
+  list-style: none;
+  margin-right: 40px;
+}
+.nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 400;
+}
+.nav_link {
+  border-radius: 50px;
+  background: rgb(230, 83, 60);
+  padding: 4px 12px;
+}
+.nav_heading {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+}
+.nav_p {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.header_second {
+  padding-top: 50px;
+}
+.miama {
+  font-family: "Miama", sans-serif;
+  line-height: 120%;
+  font-size: 80px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+.btn_join {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+}
+.btn_app {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background: 1px Inside;
 }
