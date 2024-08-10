@@ -251,6 +251,8 @@ p {
   height: 312px;
   border-radius: 18px;
   margin-top: 20px;
+  object-fit: none;
+  object-position: 67% 30%;
 }
 .run_container p {
   font-size: 14px;
@@ -258,6 +260,8 @@ p {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .run_content {
   display: flex;
@@ -266,8 +270,82 @@ p {
   align-items: center;
 }
 .run_extra {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.btn_run {
+  padding: 15px 50px;
+  font-size: 17px;
+}
+.picture_container {
+  display: grid;
+}
+.cal_heading,
+h4 {
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 120%;
+  color: rgb(255, 255, 255);
+}
+.cal_heading {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.bmi_chart {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 100%;
+  color: rgb(255, 255, 255);
+
+  display: inline-block;
+}
+
+.bmi_color {
+  width: 100%;
+  height: 450px;
+  background: rgb(34, 34, 34);
+  margin-top: 50px;
+}
+.bmi_data {
+  width: 340px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  margin: 20px 0px;
+}
+.bmi_data > tr,
+th {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.bmi_data > tr,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+.bmi_data > tr,
+th {
+  color: rgb(255, 255, 255);
+}
+.bmi_data > tr,
+td {
+  text-align: center;
+}
+.bmi_flex {
 }
