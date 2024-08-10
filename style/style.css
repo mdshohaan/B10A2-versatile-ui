@@ -302,7 +302,7 @@ h4 {
 .bmi_chart {
   margin-top: 50px;
   margin-bottom: 20px;
-  display: block;
+
   font-size: 35px;
   font-weight: 900;
   line-height: 100%;
@@ -310,10 +310,24 @@ h4 {
 
   display: inline-block;
 }
+.chart_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.extra {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.bmi_chart > div {
+  display: flex;
+  flex-direction: column;
+}
 
 .bmi_color {
   width: 100%;
-  height: 450px;
+  height: 400px;
   background: rgb(34, 34, 34);
   margin-top: 50px;
 }
@@ -348,4 +362,53 @@ td {
   text-align: center;
 }
 .bmi_flex {
+  position: absolute;
+  left: 100px;
+}
+.orgin_flex {
+  position: relative;
+}
+.your_bmi {
+  position: absolute;
+  left: 500px;
+  bottom: 10px;
+  margin-top: 50px;
+}
+.input_area {
+  width: 336px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 40px 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0px 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+  border: none;
+  font-size: 15px;
+}
+/* .labelline {
+  padding: 12px 40px 12px 20px;
+  margin: 0px 10px;
+
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+} */
+.formone > select,
+option {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+.formone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.len {
+  grid-column: 1 / span 2;
+}
+.chart_flex > h4 {
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
