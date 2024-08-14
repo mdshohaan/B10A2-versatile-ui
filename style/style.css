@@ -16,10 +16,11 @@ body {
   max-width: 100vw;
   background: #141414;
   overflow-x: hidden;
+  /* border: 2px solid red; */
   /* background-image: linear-gradient(to bottom, #141414, #141414, #141414); */
 }
 .Header_container {
-  width: 100vw;
+  /* width: 100vw; */
   background-image: linear-gradient(to bottom, #141414, #222222, #141414);
 }
 
@@ -106,6 +107,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   margin: 32px 150px 0 150px;
+  /* border: 2px solid blue; */
 }
 .header_img {
   height: 500px;
@@ -127,6 +129,13 @@ body {
   bottom: 80px;
   right: 266px;
 }
+.play_btn {
+  position: absolute;
+  color: white;
+  left: 25px;
+  margin: 0 auto;
+}
+
 .one {
   width: 40px;
   height: 40px;
@@ -135,7 +144,7 @@ body {
   margin-right: 10px;
 }
 .header_div2 h4 {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 15px;
   color: rgb(250, 250, 249);
@@ -172,7 +181,7 @@ body {
   bottom: 12px;
 }
 .nav_btn h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 30px;
   letter-spacing: 1px;
@@ -221,7 +230,7 @@ p {
 .habit_img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1200px;
+  max-width: 1200px;
   margin: 40px 90px 0px 90px;
 }
 .habit_img img {
@@ -250,8 +259,8 @@ h6 {
   flex-direction: column;
 }
 .run_container {
-  width: 960px;
-  height: 351px;
+  max-width: 960px;
+  max-height: 351px;
   border-radius: 18px;
   background: rgb(34, 34, 34);
   margin: 0 auto;
@@ -271,8 +280,8 @@ h6 {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
 }
 .run_content {
   display: flex;
@@ -293,7 +302,7 @@ h6 {
   font-size: 40px;
   font-weight: 900;
   line-height: 120%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .btn_run {
   padding: 15px 50px;
@@ -741,4 +750,49 @@ h1 {
 .change_container {
   display: flex;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .flex_section {
+    flex-direction: column;
+    justify-content: center;
+    width: 576px;
+    pad: 30px;
+  }
+  .img_div {
+    width: 100px;
+  }
+  .nav_main {
+    width: 100px;
+  }
+  .change_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .movement_container {
+    margin-bottom: 10px;
+    padding: 30px;
+  }
+  .change_heading {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .run_content {
+    width: 400px;
+  }
+  .run_extra {
+    width: 100%;
+  }
+  .run_content,
+  img {
+    width: 50px;
+  }
+  .chart_container {
+    flex-direction: column;
+    margin-top: 50px;
+  }
 }
